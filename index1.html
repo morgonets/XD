@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LOL</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+<div id="container">
+    <p>Total: <span id="total">0</span></p>
+    <button id="myButton" onclick="addNumbers()">Click me!</button>
+</div>
+<div class="icons" style="display: none;">
+    <a href="index2.html">
+        <div class="layer">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="fa-brands fa-x-twitter"></span>
+        </div>
+        <div class="text"></div>
+    </a>
+</div>
+<script>
+    let total = 0;
+    function addNumbers() {
+        total += Math.floor(Math.random() * 10) + 1; // Add a random number between 1 and 10
+        document.getElementById("total").innerText = total;
+
+        if (total >= 30) {
+            document.getElementById("total").innerText = "❤️Click button❤️";
+            document.getElementById("myButton").disabled = true;
+            document.querySelector(".icons").style.display = "flex"; // Show the icons div
+        }
+    }
+</script>
+</body>
+</html>

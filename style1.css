@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url("https://use.fontawesome.com/releases/v6.4.2/css/all.css");
+
+body {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#container {
+    text-align: center;
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#myButton {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#total {
+    display: block;
+    margin-top: 20px;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.icons {
+    display: inline-flex;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid white;
+}
+
+a {
+    color: #fff;
+    margin: 0 35px;
+    text-decoration: none;
+    display: block;
+    position: relative;
+}
+
+.layer {
+    width: 30px;
+    height: 75px;
+    transition: transform 0.3s;
+}
+.fa-brands {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    line-height: 55px;
+}
+
